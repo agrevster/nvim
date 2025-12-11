@@ -1,0 +1,8 @@
+{
+  "equation": {
+    "prefix": ["eq", "mj"],
+    "body": ["\\\\\\($0\\\\\\)"],
+    "description": "Creates a mathjax equation",
+    "scope": "markdown"
+  }
+}

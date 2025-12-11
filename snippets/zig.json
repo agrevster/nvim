@@ -1,0 +1,32 @@
+{
+  "Anonymous struct": {
+    "prefix": ["as", "anonymous-struct"],
+    "body": [".{$0}"],
+    "description": "Creates a zig anonymous struct",
+    "scope": "zig"
+  },
+  "local log info": {
+    "prefix": ["llog info"],
+    "body": ["logger.info(\"$1\", .{$0});"],
+    "description": "Creates a log function call for a local logger object",
+    "scope": "zig"
+  },
+  "local log debug": {
+    "prefix": ["llog debug"],
+    "body": ["logger.debug(\"$1\", .{$0});"],
+    "description": "Creates a log function call for a local logger object",
+    "scope": "zig"
+  },
+  "local log warn": {
+    "prefix": ["llog warn"],
+    "body": ["logger.warn(\"$1\", .{$0});"],
+    "description": "Creates a log function call for a local logger object",
+    "scope": "zig"
+  },
+  "local log err": {
+    "prefix": ["llog err"],
+    "body": ["logger.err(\"$1\", .{$0});"],
+    "description": "Creates a log function call for a local logger object",
+    "scope": "zig"
+  }
+}

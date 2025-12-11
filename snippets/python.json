@@ -1,0 +1,8 @@
+{
+  "Block Comment": {
+    "prefix": ["bc", "block-comment"],
+    "body": ["\"\"\"", "$0", "\"\"\""],
+    "description": "Creates a python block comment.",
+    "scope": "python"
+  }
+}
