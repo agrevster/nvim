@@ -12,6 +12,8 @@ keymap.set("x", "p", '"_c<Esc>p')
 keymap.set('n', '<C-l>', ':tabnext<CR>', { noremap = true, silent = true })
 keymap.set('n', '<C-h>', ':tabprevious<CR>', { noremap = true, silent = true })
 keymap.set('n', '<C-n>', ':tabnew<CR>', { noremap = true, silent = true })
+keymap.set('n', '<C-Enter>', ':tabnew | term<CR>', { noremap = true, silent = true })
+
 
 -- insert semicolon in the end
 keymap.set("i", "<A-;>", "<Esc>miA;<Esc>`ii")
