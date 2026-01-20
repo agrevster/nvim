@@ -4,5 +4,23 @@
     "body": ["\"\"\"", "$0", "\"\"\""],
     "description": "Creates a python block comment.",
     "scope": "python"
+  },
+  "pyright basic": {
+    "prefix": ["pyright-basic"],
+    "body": ["# pyright: basic"],
+    "description": "Tells pyright to use basic syntax highlighting",
+    "scope": "python"
+  },
+  "pyright strict": {
+    "prefix": ["pyright-strict"],
+    "body": ["# pyright: strict"],
+    "description": "Tells pyright to use strict syntax highlighting",
+    "scope": "python"
+  },
+  "pyright ignore": {
+    "prefix": ["pyright-ignore"],
+    "body": ["# pyright: ignore"],
+    "description": "Tells pyright to ignore this line",
+    "scope": "python"
   }
 }
