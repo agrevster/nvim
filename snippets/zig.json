@@ -28,5 +28,11 @@
     "body": ["logger.err(\"$1\", .{$0});"],
     "description": "Creates a log function call for a local logger object",
     "scope": "zig"
+  },
+  "skip test": {
+    "prefix": ["skip", "skip-test"],
+    "body": ["return error.SkipZigTest;"],
+    "description": "Tells zig to skip a given unit test by returning an error",
+    "scope": "zig"
   }
 }
