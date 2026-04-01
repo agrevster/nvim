@@ -13,17 +13,15 @@ return {
 			},
 		}
 
-		vim.lsp.config["rust_analyzer"] = {
-			settings = {
-				cargo = {
-					allFeatures = true,
-				},
-				checkOnSave = { command = "clippy" },
-				inlayHints = { bindingModeHints = { enable = true } },
-				rustfmt = { enable = true },
-				root_dir = require("lspconfig.util").root_pattern("app/Cargo.toml", "Cargo.toml", ".git"),
-			},
-		}
+		vim.lsp.config('rust_analyzer', {
+			 settings = {
+				 ['rust-analyzer'] = {
+					 diagnostics = {
+						 enable = false;
+					 }
+				 }
+			 }
+		 })
 
 		vim.lsp.config["luau_lsp"] = {
 			cmd = { '/usr/local/bin/luau-lsp', 'lsp', '--definitions=nice-clock.d.luau' },
