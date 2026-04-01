@@ -1,15 +1,15 @@
-vim.cmd.colorscheme "catppuccin-macchiato"
+vim.cmd.colorscheme("catppuccin-macchiato")
 vim.g.have_nerd_font = true
 vim.o.number = true
 vim.o.relativenumber = true
 -- Disable mouse
 --
-vim.o.mouse = ''
-vim.o.mousescroll = 'ver:0,hor:0'
+vim.o.mouse = ""
+vim.o.mousescroll = "ver:0,hor:0"
 vim.o.showmode = false
 
 vim.schedule(function()
-	vim.o.clipboard = 'unnamedplus'
+	vim.o.clipboard = "unnamedplus"
 end)
 -- Undo history
 vim.o.undofile = true
@@ -18,7 +18,7 @@ vim.o.ignorecase = true
 vim.o.smartcase = true
 
 -- Keep signcolumn on by default
-vim.o.signcolumn = 'yes'
+vim.o.signcolumn = "yes"
 
 -- Decrease update time
 vim.o.updatetime = 150
@@ -32,7 +32,7 @@ vim.o.splitbelow = true
 
 -- Show whitespace chars
 vim.o.list = true
-vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
 
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.o.scrolloff = 10
@@ -43,22 +43,21 @@ vim.o.scrolloff = 10
 vim.o.confirm = true
 
 -- Clear highlights on search when pressing <Esc> in normal mode
-vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
+vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 
 -- Enable spellcheck
-vim.opt.spelllang = 'en_us'
+vim.opt.spelllang = "en_us"
 vim.opt.spell = true
-vim.opt.spelloptions = 'camel'
+vim.opt.spelloptions = "camel"
 
 -- Highlight on yank
-vim.api.nvim_create_autocmd('TextYankPost', {
-	desc = 'Highlight when yanking (copying) text',
-	group = vim.api.nvim_create_augroup('highlight-yank', { clear = true }),
+vim.api.nvim_create_autocmd("TextYankPost", {
+	desc = "Highlight when yanking (copying) text",
+	group = vim.api.nvim_create_augroup("highlight-yank", { clear = true }),
 	callback = function()
 		vim.hl.on_yank()
 	end,
 })
-
 
 -- Use tabs instead of spaces
 vim.opt.expandtab = false

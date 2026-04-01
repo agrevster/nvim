@@ -1,7 +1,6 @@
-return
-{
-	'agrevster/marker.nvim',
+return {
+	"agrevster/marker.nvim",
 	config = function()
-		require('marker').setup()
+		require("marker").setup()
 	end,
 }

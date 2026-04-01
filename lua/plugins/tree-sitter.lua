@@ -1,11 +1,11 @@
 return {
-	'nvim-treesitter/nvim-treesitter',
+	"nvim-treesitter/nvim-treesitter",
 	branch = "master",
-	build = ':TSUpdate',
+	build = ":TSUpdate",
 	opts = {
 		auto_install = true,
 		highlight = {
-			enable = true,     -- false will disable the whole extension
+			enable = true, -- false will disable the whole extension
 			disable = { "help" }, -- list of language that will be disabled
 		},
 	},

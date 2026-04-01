@@ -1,7 +1,7 @@
 return {
-	'saghen/blink.cmp',
-	dependencies = { 'rafamadriz/friendly-snippets', 'L3MON4D3/LuaSnip', 'folke/lazydev.nvim' },
-	version = '1.*',
+	"saghen/blink.cmp",
+	dependencies = { "rafamadriz/friendly-snippets", "L3MON4D3/LuaSnip", "folke/lazydev.nvim" },
+	version = "1.*",
 	---@module 'blink.cmp'
 	---@type blink.cmp.Config
 	opts = {
@@ -17,20 +17,19 @@ return {
 		-- C-k: Toggle signature help (if signature.enabled = true)
 		--
 		-- See :h blink-cmp-config-keymap for defining your own keymap
-		keymap = { preset = 'enter' },
-
+		keymap = { preset = "enter" },
 
 		appearance = {
 			-- 'mono' (default) for 'Nerd Font Mono' or 'normal' for 'Nerd Font'
 			-- Adjusts spacing to ensure icons are aligned
-			nerd_font_variant = 'mono'
+			nerd_font_variant = "mono",
 		},
-		snippets = { preset = 'luasnip' },
+		snippets = { preset = "luasnip" },
 		signature = { enabled = true },
 		sources = {
-			default = { 'lsp', 'path', 'snippets', 'buffer' },
+			default = { "lsp", "path", "snippets", "buffer" },
 			providers = {
-				lazydev = { module = 'lazydev.integrations.blink', score_offset = 100 },
+				lazydev = { module = "lazydev.integrations.blink", score_offset = 100 },
 			},
 		},
 		completion = {
@@ -40,7 +39,7 @@ return {
 			documentation = { auto_show = true, auto_show_delay_ms = 200 },
 		},
 
-		fuzzy = { implementation = "prefer_rust_with_warning" }
+		fuzzy = { implementation = "prefer_rust_with_warning" },
 	},
-	opts_extend = { "sources.default" }
+	opts_extend = { "sources.default" },
 }
