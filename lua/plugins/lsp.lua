@@ -38,12 +38,23 @@ return {
 		vim.lsp.config["basedpyright"] = {}
 		vim.lsp.config["yamlls"] = {}
 
+		local lombok = "/usr/local/share/lombok.jar"
+		local jdtls_cmd = vim.fn.exepath("jdtls")
+
+		vim.lsp.config["jdtls"] = {
+			cmd = {
+				jdtls_cmd,
+				string.format("--jvm-arg=-javaagent:%s", lombok),
+			},
+		}
+
 		vim.lsp.enable("lua_ls")
 		vim.lsp.enable("rust_analyzer")
 		vim.lsp.enable("zls")
 		vim.lsp.enable("luau_lsp")
 		vim.lsp.enable("basedpyright")
 		vim.lsp.enable("yamlls")
+		vim.lsp.enable("jdtls")
 
 		-- Diagnostic Config
 		-- See :help vim.diagnostic.Opts
