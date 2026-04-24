@@ -37,6 +37,7 @@ return {
 
 		vim.lsp.config["basedpyright"] = {}
 		vim.lsp.config["yamlls"] = {}
+		vim.lsp.config["harper_ls"] = {}
 
 		local lombok = "/usr/local/share/lombok.jar"
 		local jdtls_cmd = vim.fn.exepath("jdtls")
@@ -55,6 +56,7 @@ return {
 		vim.lsp.enable("basedpyright")
 		vim.lsp.enable("yamlls")
 		vim.lsp.enable("jdtls")
+		vim.lsp.enable("harper_ls")
 
 		-- Diagnostic Config
 		-- See :help vim.diagnostic.Opts
