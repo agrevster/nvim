@@ -37,6 +37,7 @@ return {
 
 		vim.lsp.config["basedpyright"] = {}
 		vim.lsp.config["yamlls"] = {}
+		vim.lsp.config["harper_ls"] = {}
 
 		vim.lsp.enable("lua_ls")
 		vim.lsp.enable("rust_analyzer")
@@ -44,6 +45,7 @@ return {
 		vim.lsp.enable("luau_lsp")
 		vim.lsp.enable("basedpyright")
 		vim.lsp.enable("yamlls")
+		vim.lsp.enable("harper_ls")
 
 		-- Diagnostic Config
 		-- See :help vim.diagnostic.Opts
