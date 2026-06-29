@@ -1,10 +1,8 @@
-return {
-	"saghen/blink.cmp",
-	dependencies = { "rafamadriz/friendly-snippets", "L3MON4D3/LuaSnip", "folke/lazydev.nvim" },
-	version = "1.*",
+vim.pack.add({ { src = "https://github.com/saghen/blink.cmp.git", version = vim.version.range("1.*") } })
+require("blink.cmp").setup(
 	---@module 'blink.cmp'
 	---@type blink.cmp.Config
-	opts = {
+	{
 		-- 'default' (recommended) for mappings similar to built-in completions (C-y to accept)
 		-- 'super-tab' for mappings similar to vscode (tab to accept)
 		-- 'enter' for enter to accept
@@ -27,7 +25,7 @@ return {
 		snippets = { preset = "luasnip" },
 		signature = { enabled = true },
 		sources = {
-			default = { "lsp", "path", "snippets", "buffer" },
+			default = { "lsp", "lazydev", "path", "snippets", "buffer" },
 			providers = {
 				lazydev = { module = "lazydev.integrations.blink", score_offset = 100 },
 			},
@@ -40,6 +38,5 @@ return {
 		},
 
 		fuzzy = { implementation = "prefer_rust_with_warning" },
-	},
-	opts_extend = { "sources.default" },
-}
+	}
+)

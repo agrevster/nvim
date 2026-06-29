@@ -1,6 +1,2 @@
-return {
-	"agrevster/marker.nvim",
-	config = function()
-		require("marker").setup()
-	end,
-}
+vim.pack.add({ { src = "https://github.com/agrevster/marker.nvim.git" } })
+require("marker").setup()

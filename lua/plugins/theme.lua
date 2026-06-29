@@ -1,1 +1,1 @@
-return { "catppuccin/nvim", name = "catppuccin", priority = 0 }
+vim.pack.add({ { src = "https://github.com/catppuccin/nvim", name = "catppuccin" } })

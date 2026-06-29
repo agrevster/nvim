@@ -4,7 +4,7 @@ vim.o.number = true
 vim.o.relativenumber = true
 -- Disable mouse
 --
-vim.o.mouse = ""
+vim.o.mouse = "n"
 vim.o.mousescroll = "ver:0,hor:0"
 vim.o.showmode = false
 

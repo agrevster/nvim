@@ -1,6 +1,2 @@
-return {
-	"saghen/blink.indent",
-	--- @module 'blink.indent'
-	--- @type blink.indent.Config
-	-- opts = {},
-}
+vim.pack.add({ 'https://github.com/saghen/blink.indent' })
+require('blink.indent').setup({})

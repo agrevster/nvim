@@ -1,5 +1,4 @@
-return {
-	"nvim-telescope/telescope.nvim",
-	tag = "v0.2.0",
-	dependencies = { "nvim-lua/plenary.nvim" },
-}
+vim.pack.add({{ src="https://github.com/nvim-lua/plenary.nvim.git"}})
+vim.pack.add({{src = "https://github.com/nvim-telescope/telescope.nvim.git"}})
+
+require("telescope").setup()
