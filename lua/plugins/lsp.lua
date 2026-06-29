@@ -41,6 +41,16 @@ vim.lsp.config["html"] = {
 	filetypes = { "html", "htmldjango" },
 }
 
+local lombok = "/usr/local/share/lombok.jar"
+		local jdtls_cmd = vim.fn.exepath("jdtls")
+
+		vim.lsp.config["jdtls"] = {
+			cmd = {
+				jdtls_cmd,
+				string.format("--jvm-arg=-javaagent:%s", lombok),
+			},
+		}
+
 vim.lsp.config["basedpyright"] = {}
 vim.lsp.config["yamlls"] = {}
 vim.lsp.config["harper_ls"] = {}
@@ -53,6 +63,7 @@ vim.lsp.enable("basedpyright")
 vim.lsp.enable("yamlls")
 vim.lsp.enable("harper_ls")
 vim.lsp.enable("html")
+vim.lsp.enable("jdtls")
 
 -- Diagnostic Config
 -- See :help vim.diagnostic.Opts
