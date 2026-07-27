@@ -1,4 +1,5 @@
 vim.pack.add({ { src = "https://github.com/neovim/nvim-lspconfig.git" } })
+vim.pack.add({ { src = "https://codeberg.org/ziglang/zig.vim" } })
 
 vim.lsp.config["lua_ls"] = {
 	settings = {
@@ -14,6 +15,11 @@ vim.lsp.config["lua_ls"] = {
 vim.lsp.config("rust_analyzer", {
 	settings = {
 		["rust-analyzer"] = {
+			check = {
+				enable = true,
+				command = "clippy",
+				features = "all",
+			},
 			diagnostics = {
 				enable = false,
 			},
@@ -25,10 +31,14 @@ vim.lsp.config["luau_lsp"] = {
 	cmd = { "/usr/local/bin/luau-lsp", "lsp", "--definitions=nice-clock.d.luau" },
 }
 
+-- don't show parse errors in a separate window
+vim.g.zig_fmt_parse_errors = 0
+-- disable format-on-save from `ziglang/zig.vim`
+vim.g.zig_fmt_autosave = 0
 vim.lsp.config["zls"] = {
 	settings = {
 		zls = {
-			semantic_tokens = "partial",
+			enable_build_on_save = true,
 		},
 	},
 }
@@ -42,14 +52,14 @@ vim.lsp.config["html"] = {
 }
 
 local lombok = "/usr/local/share/lombok.jar"
-		local jdtls_cmd = vim.fn.exepath("jdtls")
+local jdtls_cmd = vim.fn.exepath("jdtls")
 
-		vim.lsp.config["jdtls"] = {
-			cmd = {
-				jdtls_cmd,
-				string.format("--jvm-arg=-javaagent:%s", lombok),
-			},
-		}
+vim.lsp.config["jdtls"] = {
+	cmd = {
+		jdtls_cmd,
+		string.format("--jvm-arg=-javaagent:%s", lombok),
+	},
+}
 
 vim.lsp.config["basedpyright"] = {}
 vim.lsp.config["yamlls"] = {}
