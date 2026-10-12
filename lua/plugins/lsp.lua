@@ -61,6 +61,10 @@ vim.lsp.config["jdtls"] = {
 	},
 }
 
+vim.lsp.config["powershell_es"] = {
+	bundle_path = "/usr/local/lib/powershell_es",
+}
+
 vim.lsp.config["basedpyright"] = {}
 vim.lsp.config["yamlls"] = {}
 vim.lsp.config["harper_ls"] = {}
@@ -74,6 +78,7 @@ vim.lsp.enable("yamlls")
 vim.lsp.enable("harper_ls")
 vim.lsp.enable("html")
 vim.lsp.enable("jdtls")
+vim.lsp.enable("powershell_es")
 
 -- Diagnostic Config
 -- See :help vim.diagnostic.Opts

@@ -1,0 +1,26 @@
+{
+  "info": {
+    "prefix": ["logi"],
+    "body": ["info!(\"$1\");"],
+    "description": "Adds a log macro",
+    "scope": "rust"
+  },
+  "error": {
+    "prefix": ["loge"],
+    "body": ["error!(\"$1\");"],
+    "description": "Adds a log macro",
+    "scope": "rust"
+  },
+  "warn": {
+    "prefix": ["logw"],
+    "body": ["warn!(\"$1\");"],
+    "description": "Adds a log macro",
+    "scope": "rust"
+  },
+  "logd": {
+    "prefix": ["logd"],
+    "body": ["debug!(\"$1\");"],
+    "description": "Adds a log macro",
+    "scope": "rust"
+  }
+}
