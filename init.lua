@@ -21,6 +21,7 @@ require("plugins.jdtls")
 require("plugins.lsp")
 require("plugins.cmp")
 require("plugins.conform")
+require("plugins.dap")
 -- Other modules
 require("keymap")
 require("general")

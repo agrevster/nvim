@@ -27,7 +27,7 @@
       "src": "https://github.com/rafamadriz/friendly-snippets.git"
     },
     "gitsigns.nvim": {
-      "rev": "aa6cc2d7addb288cfd79a05ac257695d5ff61deb",
+      "rev": "fd780920613e541cbdfac41bf711583ed49f9249",
       "src": "https://github.com/lewis6991/gitsigns.nvim.git"
     },
     "lazydev.nvim": {
@@ -43,23 +43,32 @@
       "src": "https://github.com/agrevster/marker.nvim.git"
     },
     "mini.comment": {
-      "rev": "27a29d6b949b9497f80a0a03421e89fed71d8c37",
+      "rev": "7b6e37ad79a9d11ff08e6706d5d84eaf4c389213",
       "src": "https://github.com/nvim-mini/mini.comment.git"
     },
     "mini.icons": {
-      "rev": "f642e3ba8c12afbc8f32f6d77ef6597eac56786f",
+      "rev": "f916635dc5ae2f479fbb9ab8184bb9444b62e86c",
       "src": "https://github.com/nvim-mini/mini.icons.git"
     },
     "nvim-autopairs": {
       "rev": "3172f40c16563db871a58f20d205c710ad782311",
       "src": "https://github.com/windwp/nvim-autopairs.git"
     },
+    "nvim-dap": {
+      "rev": "cfa2d58f4537aca6ca83e2de1a0d9f1491121264",
+      "src": "https://codeberg.org/mfussenegger/nvim-dap.git"
+    },
+    "nvim-dap-view": {
+      "rev": "210b2c0e4acc08aad23fbd5a7989dd0169f716d0",
+      "src": "https://github.com/igorlfs/nvim-dap-view",
+      "version": "1.0.0 - 2.0.0"
+    },
     "nvim-jdtls": {
       "rev": "6e9d953f0b82bccdb834cfde0e893f3119c22592",
       "src": "https://codeberg.org/mfussenegger/nvim-jdtls.git"
     },
     "nvim-lspconfig": {
-      "rev": "6d27c288ff951e1e94cb5f91c800adeddf0dc0c2",
+      "rev": "ac062d0d01c019c0dbdb798968f3e5d8b35c3853",
       "src": "https://github.com/neovim/nvim-lspconfig.git"
     },
     "nvim-tree.lua": {

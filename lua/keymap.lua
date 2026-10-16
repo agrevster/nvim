@@ -8,11 +8,10 @@ local keymap = vim.keymap
 -- keymap.set("x", "c", '"_c')
 -- keymap.set("x", "p", '"_c<Esc>p')
 
--- Switch wi*ow
+-- Switch wi*ows
 keymap.set("n", "<C-l>", ":tabnext<CR>", { noremap = true, silent = true })
 keymap.set("n", "<C-h>", ":tabprevious<CR>", { noremap = true, silent = true })
 keymap.set("n", "<C-n>", ":tabnew<CR>", { noremap = true, silent = true })
-keymap.set("n", "<C-Enter>", ":tabnew | term<CR>", { noremap = true, silent = true })
 
 -- insert semicolon in the end
 keymap.set("i", "<A-;>", "<Esc>miA;<Esc>`ii")
